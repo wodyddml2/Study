@@ -56,7 +56,9 @@ class CustomTableViewController: UIViewController, UITableViewDelegate, UITableV
         
         mainMenu.register(UINib(nibName: MainTableViewCell.mainIdentifier, bundle: nil), forCellReuseIdentifier: MainTableViewCell.mainIdentifier)
         subMenu.register(UINib(nibName: SubTableViewCell.subIdentifier, bundle: nil), forCellReuseIdentifier: SubTableViewCell.subIdentifier)
-        
+        mainMenu.backgroundColor = .clear
+        subMenu.backgroundColor = .clear
+        view.backgroundColor = .systemGray2
         
 
     }
@@ -82,6 +84,7 @@ class CustomTableViewController: UIViewController, UITableViewDelegate, UITableV
         }
         if tableView == mainMenu {
             mainCell.mainTitle.text = Genre.allCases[indexPath.row].mainGenre
+//            mainCell.backgroundColor = .clear
             return mainCell
         } else if tableView == subMenu {
             subCell.subTitle.text = movieGenre.submenuGenre[indexPath.row].title
@@ -89,8 +92,8 @@ class CustomTableViewController: UIViewController, UITableViewDelegate, UITableV
             subCell.checkButtonStyle(imageValue)
             subCell.checkButton.tag = indexPath.row
             subCell.checkButton.addTarget(self, action: #selector(subGenreButtonClicked), for: .touchUpInside)
-            
-//            subCell.isHidden = true
+//            subCell.backgroundColor = .clear
+            subMenu.isHidden = true
             return subCell
         } else {
             return mainCell
@@ -103,7 +106,7 @@ class CustomTableViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cell = subMenu.cellForRow(at: indexPath)
-         Genre.allCases[indexPath.row].subGenre
+    
+        subMenu.isHidden = false
     }
 }
