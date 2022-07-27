@@ -23,18 +23,11 @@ class StudyTableViewCell: UITableViewCell {
         studyImage.contentMode = .scaleAspectFill
         
         studyLabel.text = info.title
-        studyButton.setImage(UIImage(systemName: "checkmark.square"), for: .normal)
         studyButton.setTitle("", for: .normal)
         studyButton.tintColor = .black
-        studyButton.addTarget(self, action: #selector(selectedStudy), for: .touchUpInside)
+       
     }
     
-    @objc func selectedStudy() {
-        if studyButton.isSelected == true {
-            studyButton.isSelected = false
-        } else {
-            studyButton.isSelected = true
-        }
-    }
+    
 
 }

@@ -15,6 +15,8 @@
 		631891942888132B0031CC88 /* StudyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631891932888132B0031CC88 /* StudyTableViewController.swift */; };
 		6318919628881CEC0031CC88 /* TableList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6318919528881CEC0031CC88 /* TableList.swift */; };
 		6318919828881CFC0031CC88 /* TableListInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6318919728881CFB0031CC88 /* TableListInfo.swift */; };
+		6380383E2889262A00504BD5 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6380383D2889262A00504BD5 /* Detail.storyboard */; };
+		638038402889264200504BD5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6380383F2889264200504BD5 /* DetailViewController.swift */; };
 		639FC45D28880FA3001CC188 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639FC45C28880FA3001CC188 /* AppDelegate.swift */; };
 		639FC45F28880FA3001CC188 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639FC45E28880FA3001CC188 /* SceneDelegate.swift */; };
 		639FC46128880FA3001CC188 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639FC46028880FA3001CC188 /* ViewController.swift */; };
@@ -32,6 +34,8 @@
 		631891932888132B0031CC88 /* StudyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyTableViewController.swift; sourceTree = "<group>"; };
 		6318919528881CEC0031CC88 /* TableList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableList.swift; sourceTree = "<group>"; };
 		6318919728881CFB0031CC88 /* TableListInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableListInfo.swift; sourceTree = "<group>"; };
+		6380383D2889262A00504BD5 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		6380383F2889264200504BD5 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		639FC45928880FA3001CC188 /* Study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Study.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		639FC45C28880FA3001CC188 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		639FC45E28880FA3001CC188 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +79,15 @@
 			path = Table;
 			sourceTree = "<group>";
 		};
+		638038412889264E00504BD5 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				6380383D2889262A00504BD5 /* Detail.storyboard */,
+				6380383F2889264200504BD5 /* DetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		639FC45028880FA3001CC188 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +111,7 @@
 				639FC45E28880FA3001CC188 /* SceneDelegate.swift */,
 				639FC46028880FA3001CC188 /* ViewController.swift */,
 				639FC46228880FA3001CC188 /* Main.storyboard */,
+				638038412889264E00504BD5 /* Detail */,
 				6318918C288812C70031CC88 /* Table */,
 				6318918B288812C10031CC88 /* Collection */,
 				639FC46528880FA4001CC188 /* Assets.xcassets */,
@@ -170,6 +184,7 @@
 				639FC46428880FA3001CC188 /* Main.storyboard in Resources */,
 				63189188288812AE0031CC88 /* Table.storyboard in Resources */,
 				6318918A288812BA0031CC88 /* Collection.storyboard in Resources */,
+				6380383E2889262A00504BD5 /* Detail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +202,7 @@
 				6318919828881CFC0031CC88 /* TableListInfo.swift in Sources */,
 				639FC45D28880FA3001CC188 /* AppDelegate.swift in Sources */,
 				639FC45F28880FA3001CC188 /* SceneDelegate.swift in Sources */,
+				638038402889264200504BD5 /* DetailViewController.swift in Sources */,
 				6318919628881CEC0031CC88 /* TableList.swift in Sources */,
 				631891922888130C0031CC88 /* StudyTableViewCell.swift in Sources */,
 			);

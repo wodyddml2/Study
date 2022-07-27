@@ -10,4 +10,5 @@ import Foundation
 struct TableList {
     let title: String
     let poster: String
+    var done: Bool
 }
