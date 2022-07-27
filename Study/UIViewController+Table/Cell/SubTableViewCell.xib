@@ -41,6 +41,10 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="checkButton" destination="Tqk-2E-mdz" id="sm5-Oh-MDr"/>
+                <outlet property="subTitle" destination="3XA-80-Ylg" id="zUe-jo-ZwA"/>
+            </connections>
             <point key="canvasLocation" x="131.8840579710145" y="68.303571428571431"/>
         </tableViewCell>
     </objects>

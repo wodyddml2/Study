@@ -102,15 +102,31 @@
 			children = (
 				63696DB7289128240051C8F2 /* CustomTableViewController.swift */,
 				63696DB92891282F0051C8F2 /* CustomTable.storyboard */,
-				63696DBF28912A3C0051C8F2 /* MainTableViewCell.swift */,
-				63696DC028912A3C0051C8F2 /* MainTableViewCell.xib */,
+				63696DCD2891427F0051C8F2 /* Cell */,
+				63696DCE2891428D0051C8F2 /* Struct */,
+			);
+			path = "UIViewController+Table";
+			sourceTree = "<group>";
+		};
+		63696DCD2891427F0051C8F2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				63696DC428912A470051C8F2 /* SubTableViewCell.xib */,
 				63696DC328912A470051C8F2 /* SubTableViewCell.swift */,
+				63696DC028912A3C0051C8F2 /* MainTableViewCell.xib */,
+				63696DBF28912A3C0051C8F2 /* MainTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		63696DCE2891428D0051C8F2 /* Struct */ = {
+			isa = PBXGroup;
+			children = (
 				63696DC728912DBC0051C8F2 /* MainMenu.swift */,
 				63696DC9289134E20051C8F2 /* SubMenu.swift */,
 				63696DCB289134EB0051C8F2 /* SubMenuInfo.swift */,
-				63696DC428912A470051C8F2 /* SubTableViewCell.xib */,
 			);
-			path = "UIViewController+Table";
+			path = Struct;
 			sourceTree = "<group>";
 		};
 		638038412889264E00504BD5 /* Detail */ = {

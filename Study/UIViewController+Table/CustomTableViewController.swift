@@ -39,10 +39,13 @@ enum Genre: Int, CaseIterable {
     
 }
 
+var movieGenre = SubMenuInfo()
+
 class CustomTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var mainMenu: UITableView!
     @IBOutlet weak var subMenu: UITableView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,12 +56,23 @@ class CustomTableViewController: UIViewController, UITableViewDelegate, UITableV
         
         mainMenu.register(UINib(nibName: MainTableViewCell.mainIdentifier, bundle: nil), forCellReuseIdentifier: MainTableViewCell.mainIdentifier)
         subMenu.register(UINib(nibName: SubTableViewCell.subIdentifier, bundle: nil), forCellReuseIdentifier: SubTableViewCell.subIdentifier)
-
+        
+        
 
     }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Genre.allCases.count
+        if tableView == mainMenu {
+            return Genre.allCases.count
+        } else if tableView == subMenu {
+            return movieGenre.submenuGenre.count
+        } else {
+            return 0
+        }
+       
+        
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let mainCell = mainMenu.dequeueReusableCell(withIdentifier: MainTableViewCell.mainIdentifier, for: indexPath) as? MainTableViewCell else {
             return UITableViewCell()
@@ -66,9 +80,30 @@ class CustomTableViewController: UIViewController, UITableViewDelegate, UITableV
         guard let subCell = subMenu.dequeueReusableCell(withIdentifier: SubTableViewCell.subIdentifier, for: indexPath) as? SubTableViewCell else {
             return UITableViewCell()
         }
-        
-        mainCell.mainTitle.text = Genre.allCases[indexPath.row].mainGenre
-        
-        return mainCell
+        if tableView == mainMenu {
+            mainCell.mainTitle.text = Genre.allCases[indexPath.row].mainGenre
+            return mainCell
+        } else if tableView == subMenu {
+            subCell.subTitle.text = movieGenre.submenuGenre[indexPath.row].title
+            let imageValue = movieGenre.submenuGenre[indexPath.row].click ? "checkmark.square" : "checkmark.square.fill"
+            subCell.checkButtonStyle(imageValue)
+            subCell.checkButton.tag = indexPath.row
+            subCell.checkButton.addTarget(self, action: #selector(subGenreButtonClicked), for: .touchUpInside)
+            
+//            subCell.isHidden = true
+            return subCell
+        } else {
+            return mainCell
+        }
+    }
+    
+    @objc func subGenreButtonClicked(sender:UIButton) {
+        movieGenre.submenuGenre[sender.tag].click = !movieGenre.submenuGenre[sender.tag].click
+        subMenu.reloadData()
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = subMenu.cellForRow(at: indexPath)
+         Genre.allCases[indexPath.row].subGenre
     }
 }
