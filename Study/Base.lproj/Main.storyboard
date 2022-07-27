@@ -39,6 +39,7 @@
                     <connections>
                         <segue destination="LgS-II-KnN" kind="relationship" relationship="viewControllers" id="toU-fh-Uxo"/>
                         <segue destination="Xwq-ij-YSi" kind="relationship" relationship="viewControllers" id="Huz-rN-WRg"/>
+                        <segue destination="1wb-Xx-h90" kind="relationship" relationship="viewControllers" id="J6K-FD-Hf2"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dPe-AV-Pbc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -63,6 +64,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hvE-Ja-SnQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1155" y="283"/>
+        </scene>
+        <!--CustomTable-->
+        <scene sceneID="vdG-dg-Fea">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CustomTable" id="1wb-Xx-h90" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="sKI-ha-rhE"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AX8-aK-aBR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1053" y="790"/>
         </scene>
         <!--Item-->
         <scene sceneID="kMS-kw-h34">
