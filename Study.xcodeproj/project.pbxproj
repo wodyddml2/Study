@@ -38,6 +38,21 @@
 		63BB9DF428A24F5C003B88F5 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63BB9DF328A24F5C003B88F5 /* CardView.xib */; };
 		63BB9DF628A24F71003B88F5 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB9DF528A24F71003B88F5 /* CardView.swift */; };
 		63BB9DF828A2567F003B88F5 /* TotalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB9DF728A2567F003B88F5 /* TotalCollectionViewCell.swift */; };
+		63BB9DFF28A25E4D003B88F5 /* SeSAC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63BB9DFE28A25E4D003B88F5 /* SeSAC.xib */; };
+		63BB9E0128A25E62003B88F5 /* SeSAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB9E0028A25E62003B88F5 /* SeSAC.swift */; };
+		63BB9E0528A269C4003B88F5 /* Result.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63BB9E0428A269C4003B88F5 /* Result.storyboard */; };
+		63BB9E0728A269FA003B88F5 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB9E0628A269FA003B88F5 /* ResultViewController.swift */; };
+		63BB9E0A28A26A09003B88F5 /* ResultCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB9E0828A26A09003B88F5 /* ResultCollectionViewCell.swift */; };
+		63BB9E0B28A26A09003B88F5 /* ResultCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63BB9E0928A26A09003B88F5 /* ResultCollectionViewCell.xib */; };
+		63BB9E0D28A27110003B88F5 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 63BB9E0C28A27110003B88F5 /* .gitignore */; };
+		63BB9E1028A27145003B88F5 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB9E0F28A27145003B88F5 /* APIKey.swift */; };
+		63BB9E1228A271B0003B88F5 /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB9E1128A271B0003B88F5 /* URL+Extension.swift */; };
+		63BB9E1428A272EF003B88F5 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB9E1328A272EF003B88F5 /* APIManager.swift */; };
+		63BB9E1728A27301003B88F5 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 63BB9E1628A27301003B88F5 /* SwiftyJSON */; };
+		63BB9E1A28A2730B003B88F5 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 63BB9E1928A2730B003B88F5 /* Kingfisher */; };
+		63BB9E1D28A27314003B88F5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 63BB9E1C28A27314003B88F5 /* Alamofire */; };
+		63BB9E1F28A28E99003B88F5 /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB9E1E28A28E99003B88F5 /* ResultTableViewCell.swift */; };
+		63BB9E2128A298D4003B88F5 /* MovieInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB9E2028A298D4003B88F5 /* MovieInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +89,18 @@
 		63BB9DF328A24F5C003B88F5 /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
 		63BB9DF528A24F71003B88F5 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		63BB9DF728A2567F003B88F5 /* TotalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalCollectionViewCell.swift; sourceTree = "<group>"; };
+		63BB9DFE28A25E4D003B88F5 /* SeSAC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeSAC.xib; sourceTree = "<group>"; };
+		63BB9E0028A25E62003B88F5 /* SeSAC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeSAC.swift; sourceTree = "<group>"; };
+		63BB9E0428A269C4003B88F5 /* Result.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Result.storyboard; sourceTree = "<group>"; };
+		63BB9E0628A269FA003B88F5 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		63BB9E0828A26A09003B88F5 /* ResultCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCollectionViewCell.swift; sourceTree = "<group>"; };
+		63BB9E0928A26A09003B88F5 /* ResultCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultCollectionViewCell.xib; sourceTree = "<group>"; };
+		63BB9E0C28A27110003B88F5 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		63BB9E0F28A27145003B88F5 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		63BB9E1128A271B0003B88F5 /* URL+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
+		63BB9E1328A272EF003B88F5 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		63BB9E1E28A28E99003B88F5 /* ResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
+		63BB9E2028A298D4003B88F5 /* MovieInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +108,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63BB9E1D28A27314003B88F5 /* Alamofire in Frameworks */,
+				63BB9E1A28A2730B003B88F5 /* Kingfisher in Frameworks */,
+				63BB9E1728A27301003B88F5 /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +199,10 @@
 		639FC45B28880FA3001CC188 /* Study */ = {
 			isa = PBXGroup;
 			children = (
+				63BB9E0E28A27133003B88F5 /* Resource */,
+				63BB9E0C28A27110003B88F5 /* .gitignore */,
+				63BB9E1128A271B0003B88F5 /* URL+Extension.swift */,
+				63BB9DF928A25D7A003B88F5 /* SeSAC6 */,
 				63BB9DEC28A24B53003B88F5 /* UIViewController+Table+collection */,
 				63696DB6289127D80051C8F2 /* UIViewController+Table */,
 				639FC45C28880FA3001CC188 /* AppDelegate.swift */,
@@ -198,6 +232,30 @@
 			path = "UIViewController+Table+collection";
 			sourceTree = "<group>";
 		};
+		63BB9DF928A25D7A003B88F5 /* SeSAC6 */ = {
+			isa = PBXGroup;
+			children = (
+				63BB9DFE28A25E4D003B88F5 /* SeSAC.xib */,
+				63BB9E0028A25E62003B88F5 /* SeSAC.swift */,
+				63BB9E0428A269C4003B88F5 /* Result.storyboard */,
+				63BB9E0628A269FA003B88F5 /* ResultViewController.swift */,
+				63BB9E1E28A28E99003B88F5 /* ResultTableViewCell.swift */,
+				63BB9E0828A26A09003B88F5 /* ResultCollectionViewCell.swift */,
+				63BB9E0928A26A09003B88F5 /* ResultCollectionViewCell.xib */,
+				63BB9E2028A298D4003B88F5 /* MovieInfo.swift */,
+			);
+			path = SeSAC6;
+			sourceTree = "<group>";
+		};
+		63BB9E0E28A27133003B88F5 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				63BB9E0F28A27145003B88F5 /* APIKey.swift */,
+				63BB9E1328A272EF003B88F5 /* APIManager.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -214,6 +272,11 @@
 			dependencies = (
 			);
 			name = Study;
+			packageProductDependencies = (
+				63BB9E1628A27301003B88F5 /* SwiftyJSON */,
+				63BB9E1928A2730B003B88F5 /* Kingfisher */,
+				63BB9E1C28A27314003B88F5 /* Alamofire */,
+			);
 			productName = Study;
 			productReference = 639FC45928880FA3001CC188 /* Study.app */;
 			productType = "com.apple.product-type.application";
@@ -242,6 +305,11 @@
 				Base,
 			);
 			mainGroup = 639FC45028880FA3001CC188;
+			packageReferences = (
+				63BB9E1528A27301003B88F5 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				63BB9E1828A2730B003B88F5 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				63BB9E1B28A27314003B88F5 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 639FC45A28880FA3001CC188 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -261,12 +329,16 @@
 				639FC46628880FA4001CC188 /* Assets.xcassets in Resources */,
 				639FC46428880FA3001CC188 /* Main.storyboard in Resources */,
 				63189188288812AE0031CC88 /* Table.storyboard in Resources */,
+				63BB9DFF28A25E4D003B88F5 /* SeSAC.xib in Resources */,
 				63BB9DEE28A24C0E003B88F5 /* Total.storyboard in Resources */,
 				6318918A288812BA0031CC88 /* Collection.storyboard in Resources */,
 				63BB9DF428A24F5C003B88F5 /* CardView.xib in Resources */,
 				63696DC628912A470051C8F2 /* SubTableViewCell.xib in Resources */,
+				63BB9E0D28A27110003B88F5 /* .gitignore in Resources */,
 				63696DC228912A3C0051C8F2 /* MainTableViewCell.xib in Resources */,
 				6380383E2889262A00504BD5 /* Detail.storyboard in Resources */,
+				63BB9E0528A269C4003B88F5 /* Result.storyboard in Resources */,
+				63BB9E0B28A26A09003B88F5 /* ResultCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,15 +351,22 @@
 			files = (
 				631891942888132B0031CC88 /* StudyTableViewController.swift in Sources */,
 				63189190288812FD0031CC88 /* StudyCollectionViewController.swift in Sources */,
+				63BB9E0A28A26A09003B88F5 /* ResultCollectionViewCell.swift in Sources */,
 				6318918E288812E60031CC88 /* StudyCollectionViewCell.swift in Sources */,
+				63BB9E0128A25E62003B88F5 /* SeSAC.swift in Sources */,
 				639FC46128880FA3001CC188 /* ViewController.swift in Sources */,
 				63BB9DF028A24C1D003B88F5 /* TotalViewController.swift in Sources */,
 				63696DCA289134E20051C8F2 /* SubMenu.swift in Sources */,
+				63BB9E1228A271B0003B88F5 /* URL+Extension.swift in Sources */,
 				63696DC528912A470051C8F2 /* SubTableViewCell.swift in Sources */,
+				63BB9E1428A272EF003B88F5 /* APIManager.swift in Sources */,
 				63BB9DF628A24F71003B88F5 /* CardView.swift in Sources */,
+				63BB9E1028A27145003B88F5 /* APIKey.swift in Sources */,
 				6318919828881CFC0031CC88 /* TableListInfo.swift in Sources */,
+				63BB9E2128A298D4003B88F5 /* MovieInfo.swift in Sources */,
 				63696DCC289134EB0051C8F2 /* SubMenuInfo.swift in Sources */,
 				639FC45D28880FA3001CC188 /* AppDelegate.swift in Sources */,
+				63BB9E1F28A28E99003B88F5 /* ResultTableViewCell.swift in Sources */,
 				63696DB8289128240051C8F2 /* CustomTableViewController.swift in Sources */,
 				639FC45F28880FA3001CC188 /* SceneDelegate.swift in Sources */,
 				63696DC828912DBC0051C8F2 /* MainMenu.swift in Sources */,
@@ -297,6 +376,7 @@
 				63696DC128912A3C0051C8F2 /* MainTableViewCell.swift in Sources */,
 				631891922888130C0031CC88 /* StudyTableViewCell.swift in Sources */,
 				63BB9DF828A2567F003B88F5 /* TotalCollectionViewCell.swift in Sources */,
+				63BB9E0728A269FA003B88F5 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +594,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		63BB9E1528A27301003B88F5 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		63BB9E1828A2730B003B88F5 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		63BB9E1B28A27314003B88F5 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		63BB9E1628A27301003B88F5 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63BB9E1528A27301003B88F5 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		63BB9E1928A2730B003B88F5 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63BB9E1828A2730B003B88F5 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		63BB9E1C28A27314003B88F5 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63BB9E1B28A27314003B88F5 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 639FC45128880FA3001CC188 /* Project object */;
 }
