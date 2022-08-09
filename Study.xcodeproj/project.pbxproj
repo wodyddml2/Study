@@ -32,6 +32,12 @@
 		639FC46428880FA3001CC188 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 639FC46228880FA3001CC188 /* Main.storyboard */; };
 		639FC46628880FA4001CC188 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 639FC46528880FA4001CC188 /* Assets.xcassets */; };
 		639FC46928880FA4001CC188 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 639FC46728880FA4001CC188 /* LaunchScreen.storyboard */; };
+		63BB9DEE28A24C0E003B88F5 /* Total.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63BB9DED28A24C0E003B88F5 /* Total.storyboard */; };
+		63BB9DF028A24C1D003B88F5 /* TotalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB9DEF28A24C1D003B88F5 /* TotalViewController.swift */; };
+		63BB9DF228A24D0E003B88F5 /* TotalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB9DF128A24D0E003B88F5 /* TotalTableViewCell.swift */; };
+		63BB9DF428A24F5C003B88F5 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63BB9DF328A24F5C003B88F5 /* CardView.xib */; };
+		63BB9DF628A24F71003B88F5 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB9DF528A24F71003B88F5 /* CardView.swift */; };
+		63BB9DF828A2567F003B88F5 /* TotalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB9DF728A2567F003B88F5 /* TotalCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +68,12 @@
 		639FC46528880FA4001CC188 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		639FC46828880FA4001CC188 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		639FC46A28880FA4001CC188 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63BB9DED28A24C0E003B88F5 /* Total.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Total.storyboard; sourceTree = "<group>"; };
+		63BB9DEF28A24C1D003B88F5 /* TotalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalViewController.swift; sourceTree = "<group>"; };
+		63BB9DF128A24D0E003B88F5 /* TotalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalTableViewCell.swift; sourceTree = "<group>"; };
+		63BB9DF328A24F5C003B88F5 /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
+		63BB9DF528A24F71003B88F5 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		63BB9DF728A2567F003B88F5 /* TotalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +169,7 @@
 		639FC45B28880FA3001CC188 /* Study */ = {
 			isa = PBXGroup;
 			children = (
+				63BB9DEC28A24B53003B88F5 /* UIViewController+Table+collection */,
 				63696DB6289127D80051C8F2 /* UIViewController+Table */,
 				639FC45C28880FA3001CC188 /* AppDelegate.swift */,
 				639FC45E28880FA3001CC188 /* SceneDelegate.swift */,
@@ -170,6 +183,19 @@
 				639FC46A28880FA4001CC188 /* Info.plist */,
 			);
 			path = Study;
+			sourceTree = "<group>";
+		};
+		63BB9DEC28A24B53003B88F5 /* UIViewController+Table+collection */ = {
+			isa = PBXGroup;
+			children = (
+				63BB9DED28A24C0E003B88F5 /* Total.storyboard */,
+				63BB9DF328A24F5C003B88F5 /* CardView.xib */,
+				63BB9DF528A24F71003B88F5 /* CardView.swift */,
+				63BB9DEF28A24C1D003B88F5 /* TotalViewController.swift */,
+				63BB9DF128A24D0E003B88F5 /* TotalTableViewCell.swift */,
+				63BB9DF728A2567F003B88F5 /* TotalCollectionViewCell.swift */,
+			);
+			path = "UIViewController+Table+collection";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,7 +261,9 @@
 				639FC46628880FA4001CC188 /* Assets.xcassets in Resources */,
 				639FC46428880FA3001CC188 /* Main.storyboard in Resources */,
 				63189188288812AE0031CC88 /* Table.storyboard in Resources */,
+				63BB9DEE28A24C0E003B88F5 /* Total.storyboard in Resources */,
 				6318918A288812BA0031CC88 /* Collection.storyboard in Resources */,
+				63BB9DF428A24F5C003B88F5 /* CardView.xib in Resources */,
 				63696DC628912A470051C8F2 /* SubTableViewCell.xib in Resources */,
 				63696DC228912A3C0051C8F2 /* MainTableViewCell.xib in Resources */,
 				6380383E2889262A00504BD5 /* Detail.storyboard in Resources */,
@@ -253,8 +281,10 @@
 				63189190288812FD0031CC88 /* StudyCollectionViewController.swift in Sources */,
 				6318918E288812E60031CC88 /* StudyCollectionViewCell.swift in Sources */,
 				639FC46128880FA3001CC188 /* ViewController.swift in Sources */,
+				63BB9DF028A24C1D003B88F5 /* TotalViewController.swift in Sources */,
 				63696DCA289134E20051C8F2 /* SubMenu.swift in Sources */,
 				63696DC528912A470051C8F2 /* SubTableViewCell.swift in Sources */,
+				63BB9DF628A24F71003B88F5 /* CardView.swift in Sources */,
 				6318919828881CFC0031CC88 /* TableListInfo.swift in Sources */,
 				63696DCC289134EB0051C8F2 /* SubMenuInfo.swift in Sources */,
 				639FC45D28880FA3001CC188 /* AppDelegate.swift in Sources */,
@@ -262,9 +292,11 @@
 				639FC45F28880FA3001CC188 /* SceneDelegate.swift in Sources */,
 				63696DC828912DBC0051C8F2 /* MainMenu.swift in Sources */,
 				638038402889264200504BD5 /* DetailViewController.swift in Sources */,
+				63BB9DF228A24D0E003B88F5 /* TotalTableViewCell.swift in Sources */,
 				6318919628881CEC0031CC88 /* TableList.swift in Sources */,
 				63696DC128912A3C0051C8F2 /* MainTableViewCell.swift in Sources */,
 				631891922888130C0031CC88 /* StudyTableViewCell.swift in Sources */,
+				63BB9DF828A2567F003B88F5 /* TotalCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
