@@ -23,3 +23,4 @@ enum EndPoint {
 struct APIKey {
     static let TMDB = "6524d71f25d128df02ba5cdc8d700c84"
 }
+

@@ -7,10 +7,11 @@ class ResultViewController: UIViewController {
     
     @IBOutlet weak var resultTableView: UITableView!
     
-    var posterList: [MovieInfo] = []
+    var movieList: [MovieInfo] = []
     
-    var genreList: [Int: String] = [:]
-    var genreName: [String] = []
+    var genreList: [GenreInfo] = []
+   
+    var posterList: [[URL]] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,28 +25,34 @@ class ResultViewController: UIViewController {
         
         resultCollectionView.isPagingEnabled = true
         resultCollectionView.collectionViewLayout = collectionViewLayout()
+  
         requestTMDB()
-        requestGenre()
         
-        
+
     }
+    
+//    func requestTMDB() {
+//        RequestAPIManager.shared.requestTMDB(genre: genreList) { movie, poster in
+//            self.movieList.append(contentsOf: movie)
+//            self.posterList = poster
+//            DispatchQueue.main.async {
+//                self.resultCollectionView.reloadData()
+//            }
+//        }
+//    }
     
     func requestTMDB() {
-        RequestAPIManager.shared.requestTMDB { poster in
-            self.posterList.append(contentsOf: poster)
-            DispatchQueue.main.async {
-                self.resultCollectionView.reloadData()
-            }
-            
-        }
-    }
-    
-    func requestGenre() {
-        RequestAPIManager.shared.requestGenre { genreList, genreName in
+        RequestAPIManager.shared.requestGenre { genreList in
             self.genreList = genreList
-            self.genreName.append(contentsOf: genreName)
             DispatchQueue.main.async {
                 self.resultTableView.reloadData()
+            }
+            RequestAPIManager.shared.requestTMDB(genre: genreList) { movie, poster in
+                self.movieList.append(contentsOf: movie)
+                self.posterList = poster
+                DispatchQueue.main.async {
+                    self.resultCollectionView.reloadData()
+                }
             }
         }
     }
@@ -54,17 +61,18 @@ class ResultViewController: UIViewController {
 
 extension ResultViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return posterList.count
+        return collectionView == resultCollectionView ? movieList.count : posterList[collectionView.tag].count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ResultCollectionViewCell", for: indexPath) as? ResultCollectionViewCell else {return UICollectionViewCell()}
         
-//        cell.sesacView.posterImageView.backgroundColor = color[indexPath.row]
-  
-        cell.sesacView.posterImageView.kf.setImage(with: posterList[indexPath.item].movieBack)
-       
-    
+        if collectionView == resultCollectionView {
+            cell.sesacView.posterImageView.kf.setImage(with: movieList[indexPath.item].movieBack)
+        } else {
+            cell.sesacView.posterImageView.kf.setImage(with: posterList[collectionView.tag][indexPath.item])
+        }
+        
         return cell
     }
     
@@ -83,7 +91,8 @@ extension ResultViewController: UICollectionViewDelegate, UICollectionViewDataSo
 
 extension ResultViewController: UITableViewDelegate,UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return genreName.count
+
+        return genreList.count
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
@@ -95,9 +104,13 @@ extension ResultViewController: UITableViewDelegate,UITableViewDataSource {
         cell.contentCollectionView.delegate = self
         cell.contentCollectionView.dataSource = self
         cell.contentCollectionView.register(UINib(nibName: "ResultCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ResultCollectionViewCell")
-        cell.titleLabel.text = genreName[indexPath.section]
+    
+        cell.titleLabel.text = genreList[indexPath.section].genreName
         cell.contentCollectionView.tag = indexPath.section
         cell.contentCollectionView.reloadData()
+        
+  
+
         return cell
     }
     
